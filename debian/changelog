@@ -1,9 +1,41 @@
-node-wcwidth.js (1.0.0-1.1) unstable; urgency=medium
+node-wcwidth.js (1.0.2-2) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-wcwidth.js: Add Multi-Arch: foreign.
 
- -- Holger Levsen <holger@debian.org>  Sun, 27 Dec 2020 17:30:55 +0100
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 07 Dec 2022 23:51:25 +0000
+
+node-wcwidth.js (1.0.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Remove constraints unnecessary since stretch:
+    + node-wcwidth.js: Drop versioned constraint on node-defaults in Depends.
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 1.0.2
+  * Enable upstream test (tape)
+
+ -- Yadd <yadd@debian.org>  Mon, 22 Nov 2021 11:38:34 +0100
 
 node-wcwidth.js (1.0.0-1) unstable; urgency=low
 

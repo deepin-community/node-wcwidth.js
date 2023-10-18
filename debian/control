@@ -1,23 +1,24 @@
 Source: node-wcwidth.js
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Suhail P <psuhailp@gmail.com>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-defaults <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-wcwidth.js
+Vcs-Git: https://salsa.debian.org/js-team/node-wcwidth.js.git
 Homepage: http://code.woong.org/wcwidth.js
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-wcwidth.js.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-wcwidth.js.git
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-wcwidth.js
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
- , node-defaults (>= 1.0.0)
+Depends: ${misc:Depends}
+ , node-defaults
+Multi-Arch: foreign
 Description: wcwidth.js is a javascript porting of C's wcwidth()
  wcwidth.js is a simple javascript porting of wcwidth()
  implemented in C by Markus Kuhn.
